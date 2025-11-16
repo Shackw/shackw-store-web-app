@@ -1,5 +1,5 @@
 {
-  "name": "shackw-web-app",
+  "name": "shackw-store-web-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,8 @@
     "format": "npx prettier --write '**/*.{js,ts,tsx}'",
     "lint": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
     "ui:add": "npx shadcn@latest add",
-    "deploy:clean": "ssh conoha-wing-shackw 'rm -rf ~/public_html/shackw.com/*' || true",
-    "deploy": "yarn build && yarn deploy:clean && scp -r dist/. conoha-wing-shackw:~/public_html/shackw.com/"
+    "deploy:clean": "ssh conoha-wing-shackw 'rm -rf ~/public_html/store.shackw.com/*' || true",
+    "deploy": "yarn build && yarn deploy:clean && scp -r dist/. conoha-wing-shackw:~/public_html/store.shackw.com/"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
